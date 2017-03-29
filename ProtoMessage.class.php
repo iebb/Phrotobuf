@@ -21,7 +21,7 @@ class Protomessage {
 		return ord($this->raw_data[$this->position]);
 	}
 	private function next() {
-		if ($this->position > $this->length) die("error");
+		if ($this->position > $this->length) throw new Exception('Out of range');
 		return $this->raw_data[$this->position++];
 	}
 	private function readULEB128() {
