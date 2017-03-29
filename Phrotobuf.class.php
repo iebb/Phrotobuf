@@ -1,5 +1,5 @@
 <?php 
-class Protomessage {
+class Phrotobuf {
 	private $raw_data;
 	private $position = 0;
 	private $length;
